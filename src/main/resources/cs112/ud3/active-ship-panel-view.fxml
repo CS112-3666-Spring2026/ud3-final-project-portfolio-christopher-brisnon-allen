@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="activeShipView" maxHeight="490.0" maxWidth="200.0" minHeight="490.0" minWidth="200.0" prefHeight="490.0" prefWidth="200.0" visible="false" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controller.ActiveShipController">
+   <children>
+      <HBox fx:id="activeShipNameLabelHBox" alignment="CENTER" maxHeight="20.0" maxWidth="200.0" minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="activeShipNameLabel" text="ActiveShipName" />
+         </children></HBox>
+      <HBox fx:id="healthPanel" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <HBox fx:id="hullHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="hullVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ProgressBar fx:id="hullBar" maxHeight="40.0" maxWidth="160.0" minHeight="20.0" minWidth="80.0" prefHeight="20.0" prefWidth="80.0" progress="0.0" VBox.vgrow="NEVER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets></ProgressBar>
+                        <Label fx:id="hullValueLabel" text="HULLVALUE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fx:id="shieldHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="shieldVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ProgressBar fx:id="shieldBar" maxHeight="40.0" maxWidth="160.0" minHeight="20.0" minWidth="80.0" prefHeight="20.0" prefWidth="80.0" progress="0.0" VBox.vgrow="NEVER" />
+                        <Label fx:id="shieldValueLabel" text="SHIELDVALUE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="corePanel" maxHeight="40.0" maxWidth="320.0" minHeight="20.0" minWidth="160.0" prefHeight="20.0" prefWidth="160.0">
+         <children>
+            <HBox fx:id="coreHBox" maxHeight="40.0" maxWidth="320.0" minHeight="20.0" minWidth="160.0" prefHeight="20.0" prefWidth="160.0" VBox.vgrow="NEVER">
+               <children>
+                  <GridPane HBox.hgrow="NEVER">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                      <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="coreButton0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="0" />
+                        <Button fx:id="coreButton1" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" />
+                        <Button fx:id="coreButton2" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" />
+                        <Button fx:id="coreButton3" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" />
+                        <Button fx:id="coreButton4" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" />
+                        <Button fx:id="coreButton5" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="5" />
+                        <Button fx:id="coreButton6" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="6" />
+                        <Button fx:id="coreButton7" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="7" />
+                        <Button fx:id="coreButton8" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="8" />
+                        <Button fx:id="coreButton9" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="9" />
+                     </children>
+                  </GridPane>
+               </children></HBox>
+         </children>
+      </VBox>
+      <HBox fx:id="equipmentPanel" alignment="CENTER">
+         <children>
+            <VBox fx:id="equipmentSlotPanel" alignment="CENTER" maxHeight="160.0" maxWidth="100.0" minHeight="160.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" HBox.hgrow="NEVER">
+               <children>
+                  <GridPane fx:id="equipGrid" alignment="CENTER" hgap="120.0" maxHeight="160.0" maxWidth="100.0" minHeight="160.0" minWidth="200.0" prefHeight="160.0" prefWidth="100.0" vgap="5.0" VBox.vgrow="NEVER">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints valignment="CENTER" vgrow="NEVER" />
+                      <RowConstraints valignment="CENTER" vgrow="NEVER" />
+                      <RowConstraints valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints valignment="CENTER" vgrow="NEVER" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="armorEquipButton0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" />
+                        <Button fx:id="armorEquipButton1" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.columnIndex="1" />
+                        <Button fx:id="armorEquipButton2" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.rowIndex="1" />
+                        <Button fx:id="armorEquipButton3" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="armorEquipButton4" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.rowIndex="2" />
+                        <Button fx:id="armorEquipButton5" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="armorEquipButton6" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.rowIndex="3" />
+                        <Button fx:id="armorEquipButton7" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox fx:id="activeShipStatPanel" alignment="TOP_CENTER" maxHeight="240.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="240.0" prefWidth="200.0">
+         <children>
+            <HBox fx:id="activeShipLabelHBox" alignment="TOP_CENTER" maxHeight="40.0" maxWidth="320.0" minHeight="20.0" minWidth="160.0" prefHeight="20.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="activeShipStatLabel" text="ActiveShipStats" />
+               </children>
+            </HBox>
+            <VBox fx:id="activeShipStatContainer" alignment="TOP_CENTER" maxHeight="160.0" maxWidth="200.0" minHeight="160.0" minWidth="200.0" prefHeight="160.0" prefWidth="200.0" spacing="6.0">
+               <children>
+                  <HBox fx:id="speedStatContainer" alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="200.0" minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatSpeedLabel" text="Speed: ">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatSpeedValue" text="0" />
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children></HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="200.0" minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatCombatPowerLabel" text="Combat Power:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatCombatPowerValue" text="0" />
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="200.0" minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatMiningPowerLabel" text="Mining Power:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatMiningPowerValue" text="0" />
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="200.0" minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatSalvagePowerLabel" text="Salvage Power:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatSalvagePowerValue" text="0" />
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="200.0" minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatScoutPowerLabel" text="Scout Power:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="activeShipStatScoutPowerValue" text="0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

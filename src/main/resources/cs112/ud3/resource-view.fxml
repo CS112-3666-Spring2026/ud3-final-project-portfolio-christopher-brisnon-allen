@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="resourceView" maxHeight="20.0" maxWidth="860.0" minHeight="20.0" minWidth="860.0" prefHeight="20.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controller.ResourceController">
+   <children>
+      <GridPane hgap="5.0" maxHeight="20.0" maxWidth="600.0" minHeight="20.0" minWidth="600.0" prefHeight="20.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox fx:id="resource0Container" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox fx:id="creditContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="creditLabelContainer" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="creditLabel" text="Credits:" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="creditValueContainer" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="creditValueLabel" text="0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="resource1Container" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+               <children>
+                  <HBox fx:id="energyContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="energyLabelContainer" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="energyLabel" text="Energy:" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="energyValueContainer" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="energyValueLabel" text="0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="resource2Container" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+               <children>
+                  <HBox fx:id="salvageContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="salvageLabelContainer" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="salvageLabel" text="Salvage:" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="salvageValueContainer" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="salvageValueLabel" text="0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="resource3Container" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+               <children>
+                  <HBox fx:id="mineralContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="mineralLabelContainer" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="mineralLabel" text="Minerals:" />
+                           </children></VBox>
+                        <VBox fx:id="mineralValueContainer" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="mineralValueLabel" text="0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="resource5Container" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5">
+               <children>
+                  <HBox fx:id="fleetCapacityContainer" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="fleetCapacityLabelContainer" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="fleetCapacityLabel" text="Ship Capacity:" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="fleetCapacityValueContainer" alignment="CENTER" maxHeight="20.0" maxWidth="30.0" minHeight="20.0" minWidth="30.0" prefHeight="20.0" prefWidth="30.0">
+                           <children>
+                              <Label fx:id="fleetCapacityValueLabel" text="0/0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <HBox fx:id="menuContainer" alignment="CENTER" maxHeight="20.0" maxWidth="260.0" minHeight="20.0" minWidth="260.0" prefHeight="20.0" prefWidth="260.0" spacing="5.0">
+         <children>
+            <VBox fx:id="storageContainer" alignment="CENTER" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0">
+               <children>
+                  <Button fx:id="storageButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="gameTimeContainer" alignment="CENTER" maxHeight="20.0" maxWidth="180.0" minHeight="20.0" minWidth="180.0" prefHeight="20.0" prefWidth="180.0">
+               <children>
+                  <Label fx:id="gameTimeLabel" text="Time" />
+               </children>
+            </VBox>
+            <VBox fx:id="playContainer" alignment="CENTER" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0">
+               <children>
+                  <Button fx:id="playButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="menuContainer" alignment="CENTER" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0">
+               <children>
+                  <Button fx:id="menuButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+               </children>
+            </VBox>
+         </children></HBox>
+   </children>
+</HBox>

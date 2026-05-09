@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="cs112.ud3.controller.MainController"
+            prefWidth="860"
+            prefHeight="510"
+            minWidth="860"
+            minHeight="510">
+
+   <!-- FAR LEFT: Fleet Icon List -->
+   <left>
+      <fx:include fx:id="fleetListView"
+                  source="fleet-list-view.fxml" />
+   </left>
+
+   <!-- CENTER: Active Ship Panel + Main Content Area -->
+   <center>
+      <HBox spacing="0">
+         <!-- Active Ship Panel -->
+         <fx:include fx:id="activeShipView"
+                     source="active-ship-panel-view.fxml" />
+
+         <!-- Main Content Area (the big central white space) -->
+         <StackPane fx:id="mainContentArea"
+                    HBox.hgrow="ALWAYS" />
+      </HBox>
+   </center>
+
+   <!-- BOTTOM: Resource Bar -->
+   <bottom>
+      <fx:include fx:id="resourceView"
+                  source="resource-view.fxml" />
+   </bottom>
+
+</BorderPane>

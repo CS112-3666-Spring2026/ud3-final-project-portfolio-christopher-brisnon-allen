@@ -1,6 +1,6 @@
-package cs112.ud2.controller;
+package cs112.ud3.controller;
 
-import cs112.ud2.model.Ship;
+import cs112.ud3.model.Ship;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;

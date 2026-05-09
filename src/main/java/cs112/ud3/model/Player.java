@@ -1,9 +1,9 @@
-package cs112.ud2.model;
+package cs112.ud3.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import cs112.ud2.manager.ResourceManager;
+import cs112.ud3.manager.ResourceManager;
 
 /**
  * Player.java

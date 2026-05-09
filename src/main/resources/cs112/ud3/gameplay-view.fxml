@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="gameplayPanel" alignment="CENTER" prefWidth="500" spacing="15" styleClass="gameplay-view" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controller.GameplayController">
+
+    <padding>
+        <Insets bottom="30" left="30" right="30" top="30" />
+    </padding>
+
+    <Label fx:id="gameplayPanelLabel" styleClass="title-label" text="Gameplay / Debug View" />
+
+    <HBox spacing="20">
+        <VBox spacing="12">
+            <Label styleClass="section-label" text="Resources" />
+            <Button onAction="#addMinerals" prefWidth="180" text="+100 Minerals" />
+            <Button onAction="#addSalvage" prefWidth="180" text="+100 Salvage" />
+            <Button onAction="#addEnergy" prefWidth="180" text="+100 Energy" />
+            <Button onAction="#addCredits" prefWidth="180" text="+200 Credits" />
+        </VBox>
+
+        <VBox spacing="12">
+            <Label styleClass="section-label" text=" " />
+            <Button onAction="#subtractMinerals" prefWidth="180" text="-50 Minerals" />
+            <Button onAction="#subtractSalvage" prefWidth="180" text="-50 Salvage" />
+            <Button onAction="#subtractEnergy" prefWidth="180" text="-50 Energy" />
+            <Button onAction="#subtractCredits" prefWidth="180" text="-50 Credits" />
+        </VBox>
+    </HBox>
+
+    <Separator />
+
+    <HBox fx:id="fleetManagementButtons" spacing="20">
+        <VBox fx:id="fleetManagementButtonsContainer" spacing="12">
+            <Label fx:id="fleetManagementButtonsLabel" styleClass="section-label" text="Fleet Management" />
+            <Button onAction="#addShip" prefWidth="180" text="+Add Ship" />
+            <Button onAction="#removeSelectedShip" prefWidth="180" text="-Remove Ship" />
+            <Button onAction="#printFleet" prefWidth="180" text="Print Fleet" />
+        </VBox>
+    </HBox>
+   <Separator prefWidth="200.0" />
+
+     <!-- Right Column -->
+     <VBox spacing="12">
+         <Label styleClass="section-label" text="Ship Actions" />
+     </VBox>
+
+</VBox>

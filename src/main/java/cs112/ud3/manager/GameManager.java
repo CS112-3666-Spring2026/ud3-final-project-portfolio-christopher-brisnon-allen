@@ -1,7 +1,7 @@
-package cs112.ud2.manager;
+package cs112.ud3.manager;
 
-import cs112.ud2.model.Player;
-import cs112.ud2.model.Ship;
+import cs112.ud3.model.Player;
+import cs112.ud3.model.Ship;
 /**
  * GameManager.java
  *    ─ Player

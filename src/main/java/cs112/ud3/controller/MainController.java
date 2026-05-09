@@ -1,6 +1,6 @@
-package cs112.ud2.controller;
+package cs112.ud3.controller;
 
-import cs112.ud2.manager.GameManager;
+import cs112.ud3.manager.GameManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.StackPane;
@@ -33,7 +33,7 @@ public class MainController {
     // Loads the gameplay view into the main content area and gets its controller
     private void loadGameplayView() throws IOException {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/cs112/ud2/gameplay-view.fxml")
+                    getClass().getResource("/cs112/ud3/gameplay-view.fxml")
             );
 
             javafx.scene.Parent gameplayView = loader.load();
